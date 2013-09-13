@@ -6,4 +6,14 @@ We seek to improve throughput and reduce latency by modifying Zuul, then benchma
 We plan to port Zuul to make use of the Netty stack. Netty will provide a SEDA and non-blocking outbound IO which should lead to throughput improvements.
 
 ## Provide Links to Github Repo's for your Submission
+### Fork of Netflix repo used for performance testing
 https://github.com/neilbeveridge/zuul
+### Netty 3 Port of Zuul used for performance testing
+https://github.com/neilbeveridge/zuul-netty
+
+## Approach
+
+## Performance Test Plan
+
+## Performance Test Outcomes
+
