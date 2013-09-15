@@ -1,9 +1,11 @@
-## Which Categories Best Fit Your Submission and Why?
+# Which Categories Best Fit Your Submission and Why?
 ###Best Contribution to Performance Improvements
 We seek to improve throughput and reduce latency by modifying Zuul, then benchmark and bake off the two implementations.
 
 ## Describe your Submission
 We plan to port Zuul to make use of the Netty stack. Netty will provide a SEDA and non-blocking outbound IO which should lead to throughput improvements.
+
+The deliverables will be performance test results for Zuul and the Zuul-Netty port on equivalent hardware where the stub and client are not saturated. In addition, a Zuul-Netty codebase will be delivered as an interesting starting place for a full Netty migration which we, and the community at large,  may like to investigate further. 
 
 ## Provide Links to Github Repo's for your Submission
 ### Fork of Netflix repo used for performance testing
@@ -12,9 +14,7 @@ https://github.com/neilbeveridge/zuul
 https://github.com/neilbeveridge/zuul-netty
 
 ## Approach
-The work undertaken was primarily to benchmark Zuul vs a Netty port of Zuul (Zuul-Netty). The performance results are therefore the primary deliverable. We are also delivering the Zuul-Netty code as a good starting point for further investigation and as a reference should the community wish to incorporate Netty as an optional protocol layer in Zuul. 
-
-A proxy will be built out in Netty 3 with the following features;
+A proxy will be built out in Netty 3 with the following features:
 
 - Default proxy stage rather than leaving this up to a dynamic filter. 
 - Less lenient filter API such that buffers may be left in Kernel space unless really necessary. 
