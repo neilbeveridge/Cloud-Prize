@@ -112,3 +112,10 @@ Load TPS|Tomcat Zuul -Latency\_ms|Tomcat Zuul-%CPU|Netty Zuul -Latency\_ms|Netty
 - Tuning of filter stage. 
 - Buffer tuning.
 - Netflix OSS flavour proxy port. 
+
+## Credits & Thanks
+Project lead: Neil Beveridge.
+Performance lead: Raamnath Mani.
+Contributors: Fanta Gizaw, Will Tomlin.
+
+A special thank you to Hotels.com for allowing us to contribute to this project during working hours.
