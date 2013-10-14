@@ -115,7 +115,8 @@ Load TPS|Tomcat Zuul -Latency\_ms|Tomcat Zuul-%CPU|Netty Zuul -Latency\_ms|Netty
 
 ## Post-deadline Update
 - The CPU thrashing issue was tracked down to context switching casued by a badly sized worker stage thread pool. This has now been pinned to #cpus since these threads will never block for io. Performance of zuul-netty is now >2000TPS for 10k payload and 50ms stub dither. Full performance results will be published as a module in the zuul-netty project proper.
-- See https://github.com/neilbeveridge/zuul-netty/blob/master/performance.md. 
+- Dedicated test results: https://github.com/neilbeveridge/zuul-netty/blob/master/performance-dedicated.md.
+- EC2 test results: https://github.com/neilbeveridge/zuul-netty/blob/master/performance-ec2.md. 
 
 ## Credits & Thanks
 - Project lead: Neil Beveridge.
